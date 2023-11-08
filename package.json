@@ -1,0 +1,29 @@
+{
+  "name": "azuro-learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm run get-dictionaries",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "get-dictionaries": "get-dictionaries -o ./dictionaries -v latest -t js"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.6",
+    "@azuro-org/dictionaries": "^2.0.4",
+    "@azuro-org/toolkit": "^2.0.0",
+    "@usedapp/core": "^1.2.13",
+    "dayjs": "^1.11.10",
+    "ethers": "^5.7.2",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}
